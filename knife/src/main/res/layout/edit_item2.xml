@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.github.mthli.knife.KnifeText xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/knife"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="48dp"
+    android:layout_alignParentTop="true"
+    android:background="@null"
+    android:gravity="bottom"
+    android:paddingEnd="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:scrollbars="vertical"
+    app:bulletColor="@color/blue_500"
+    app:bulletGapWidth="@dimen/bullet_gap_width"
+    app:bulletRadius="@dimen/bullet_radius"
+    app:historyEnable="true"
+    app:historySize="99"
+    app:linkColor="@color/blue_500"
+    app:linkUnderline="true"
+    app:quoteCapWidth="@dimen/quote_gap_width"
+    app:quoteColor="@color/blue_500"
+    app:quoteStripeWidth="@dimen/quote_stripe_width">
+
+</io.github.mthli.knife.KnifeText>

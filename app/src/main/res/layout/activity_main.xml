@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:id="@+id/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:background="?android:selectableItemBackground"
+                android:src="@drawable/image1"/>
+
+            <ImageButton
+                android:id="@+id/bold"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/ic_format_bold"/>
+
+            <ImageButton
+                android:id="@+id/italic"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/ic_format_italic"/>
+
+            <ImageButton
+                android:id="@+id/underline"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/ic_format_underline"/>
+
+            <ImageButton
+                android:id="@+id/strikethrough"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/ic_format_strikethrough"/>
+
+            <ImageButton
+                android:id="@+id/bullet"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/ic_format_bullet"/>
+
+            <ImageButton
+                android:id="@+id/quote"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/ic_format_quote"/>
+
+            <ImageButton
+                android:id="@+id/link"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/ic_insert_link"/>
+
+            <ImageButton
+                android:id="@+id/clear"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/ic_format_clear"/>
+
+            <TextView
+                android:id="@+id/h1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="H1"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/h2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="H2"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!--<io.github.mthli.knife.KnifeText-->
+        <!--android:id="@+id/knife"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@id/tools"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:gravity="top|start"-->
+        <!--android:paddingEnd="16dp"-->
+        <!--android:paddingLeft="16dp"-->
+        <!--android:paddingRight="16dp"-->
+        <!--android:paddingStart="16dp"-->
+        <!--android:paddingTop="16dp"-->
+        <!--android:scrollbars="vertical"-->
+        <!--app:bulletColor="@color/blue_500"-->
+        <!--app:bulletGapWidth="@dimen/bullet_gap_width"-->
+        <!--app:bulletRadius="@dimen/bullet_radius"-->
+        <!--app:historyEnable="true"-->
+        <!--app:historySize="99"-->
+        <!--app:linkColor="@color/blue_500"-->
+        <!--app:linkUnderline="true"-->
+        <!--app:quoteCapWidth="@dimen/quote_gap_width"-->
+        <!--app:quoteColor="@color/blue_500"-->
+        <!--app:quoteStripeWidth="@dimen/quote_stripe_width">-->
+
+    <!--</io.github.mthli.knife.KnifeText>-->
+
+    <io.github.mthli.knife.RichTextEditor2
+        android:id="@+id/richEditor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/tools"
+        android:background="#fff" />
+
+</RelativeLayout>

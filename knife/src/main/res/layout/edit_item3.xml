@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_point"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:src="@drawable/icon_point2"/>
+
+    <io.github.mthli.knife.KnifeText
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/knife"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:background="@null"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:paddingTop="5dp"
+        android:gravity="top"
+        android:scrollbars="vertical"
+        android:text=""
+        app:bulletColor="@color/blue_500"
+        app:linkColor="@color/blue_500"
+        app:quoteColor="@color/blue_500">
+
+    </io.github.mthli.knife.KnifeText>
+</LinearLayout>
